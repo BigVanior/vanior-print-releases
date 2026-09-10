@@ -1,0 +1,41 @@
+VANIOR PRINT — уведомления о сторонних компонентах
+
+VANIOR PRINT не включает и не запускает Bambu Studio. Упоминания Bambu Lab и
+P1S используются только для описания совместимости и не означают одобрения,
+партнёрства или официальной принадлежности.
+
+Qt for Python / PySide6 6.11.2 и Shiboken6 6.11.2
+Copyright (C) The Qt Company Ltd. и участники проекта Qt
+Лицензия выбранной поставки: GNU Lesser General Public License v3.0
+Исходный код: https://code.qt.io/cgit/pyside/pyside-setup.git/tag/?h=v6.11.2
+Полный текст LGPL-3.0 находится рядом в файле LGPL-3.0.txt. Библиотеки Qt
+поставляются отдельными динамическими файлами внутри каталога приложения.
+
+NumPy 2.3.5 — BSD-3-Clause
+Исходный код: https://github.com/numpy/numpy/tree/v2.3.5
+
+trimesh 4.12.2 — MIT
+Исходный код: https://github.com/mikedh/trimesh/tree/4.12.2
+
+fast-simplification 0.1.13 — MIT
+Исходный код: https://github.com/pyvista/fast-simplification/tree/v0.1.13
+
+Shapely 2.1.2 — BSD-3-Clause
+Исходный код: https://github.com/shapely/shapely/tree/2.1.2
+
+Pillow 12.3.0 — MIT-CMU
+Исходный код: https://github.com/python-pillow/Pillow/tree/12.3.0
+
+Eclipse Paho MQTT Python 2.1.0 — EPL-2.0 или EDL-1.0 (BSD-3-Clause)
+Исходный код: https://github.com/eclipse-paho/paho.mqtt.python/tree/v2.1.0
+
+Python — Python Software Foundation License
+Исходный код: https://www.python.org/downloads/source/
+
+PyInstaller 6.22.2 — GPL-2.0-or-later со специальным исключением для
+распространения собранных несвободных приложений
+Исходный код: https://github.com/pyinstaller/pyinstaller/tree/v6.22.2
+
+Полные тексты лицензий, найденные в среде сборки, автоматически помещаются в
+каталог _internal/legal/packages. Эти уведомления не изменяют условия лицензий
+соответствующих компонентов.
