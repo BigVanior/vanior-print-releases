@@ -1,0 +1,8 @@
+include README.md
+include CHANGELOG.md
+include LICENSE
+include requirements.txt
+recursive-include docs *.md
+recursive-include src/ai_print_optimizer/schemas *.json
+recursive-include src/ai_print_optimizer/assets *.png *.ico
+recursive-include tests *.py
