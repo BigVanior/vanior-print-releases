@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ai-print-optimizer/schemas/batch-summary-v1.json",
+  "title": "VANIOR PRINT batch summary",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "application",
+    "input_dir",
+    "output_dir",
+    "profile_template_path",
+    "created_utc",
+    "completed",
+    "skipped",
+    "failed",
+    "items",
+    "summary_path",
+    "html_report_path"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "application": {"type": "object", "required": ["name", "version"]},
+    "input_dir": {"type": "string"},
+    "output_dir": {"type": "string"},
+    "profile_template_path": {"type": "string"},
+    "created_utc": {"type": "string"},
+    "completed": {"type": "integer"},
+    "skipped": {"type": "integer"},
+    "failed": {"type": "integer"},
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_path", "source_sha256", "output_dir", "status"]
+      }
+    },
+    "summary_path": {"type": "string"},
+    "html_report_path": {"type": "string"},
+    "error_log_path": {"type": ["string", "null"]}
+  }
+}

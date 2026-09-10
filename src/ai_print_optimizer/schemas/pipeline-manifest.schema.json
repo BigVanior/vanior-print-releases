@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ai-print-optimizer/schemas/pipeline-manifest-v1.json",
+  "title": "VANIOR PRINT pipeline manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "application",
+    "created_utc",
+    "runtime",
+    "inputs",
+    "parameters",
+    "stages",
+    "artifacts"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "application": {
+      "type": "object",
+      "required": ["name", "version"]
+    },
+    "created_utc": {"type": "string"},
+    "runtime": {"type": "object"},
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "path", "sha256"]
+      }
+    },
+    "parameters": {"type": "object", "required": ["mode", "material"]},
+    "stages": {"type": "object"},
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "size_bytes", "sha256"]
+      }
+    }
+  }
+}
